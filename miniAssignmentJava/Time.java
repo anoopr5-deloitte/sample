@@ -13,6 +13,7 @@ public class Time {
     }
     public Time(int hour , int minute, int second)
     {
+        this();
         if (second > 0 && second < 60) {
             this.seconds = second;
         }
@@ -35,8 +36,8 @@ public class Time {
 
 
     public static void main(String[] args) {
-        Time t1 = new Time();
-        t1 = Time(25, 20, 30);
+
+        Time t1 = new Time(100, 20, 0);
     }
 
 }
